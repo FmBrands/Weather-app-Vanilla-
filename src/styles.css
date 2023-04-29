@@ -1,9 +1,5 @@
-.weather-app {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #bdc1c6;
-  border-radius: 5px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
   color: #878787;
@@ -11,6 +7,17 @@ h1 {
   font: weight 100px;
   line-height: 28px;
   margin-bottom: 0;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #bdc1c6;
+  border-radius: 5px;
 }
 
 ul {
