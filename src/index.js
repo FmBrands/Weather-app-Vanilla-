@@ -12,6 +12,8 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = `Friday 05 : 00`;
 }
 
 let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
