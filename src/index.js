@@ -1,3 +1,11 @@
+function searchCity(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#search-form");
+  console.log(cityInput.value);
+}
+
+let searchButton = document.querySelector("#search-city");
+searchButton.addEventListener("submit", searchCity);
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
