@@ -59,11 +59,12 @@ function handleSubmit(event) {
 }
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let FahrenheitTemperature = (14 * 9) / 5 + 32;
+  let FahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(FahrenheitTemperature);
 }
-search(city);
+let celciusTemperature = null;
+search("New York");
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
